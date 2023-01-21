@@ -1,11 +1,12 @@
 package ru.netology.stats.service;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class StatsServiceTest {
 
     @Test
-public void shouldCalculateSum() {
+    public void shouldCalculateSum() {
         StatsService service = new StatsService();
         int[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
@@ -47,6 +48,7 @@ public void shouldCalculateSum() {
 
         Assertions.assertEquals(expectedMinSalesMonth, actualMinSalesMonth);
     }
+
     @Test
     public void shouldGetSumOfMonthsBelowAverage() {
         StatsService service = new StatsService();
@@ -57,6 +59,7 @@ public void shouldCalculateSum() {
 
         Assertions.assertEquals(expectedMonthsBelowAverage, actualMonthsBelowAverage);
     }
+
     @Test
     public void shouldGetSumOfMonthsAboveAverage() {
         StatsService service = new StatsService();
